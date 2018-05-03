@@ -7,6 +7,7 @@ def display_board(the_board)
   puts " #{the_board[6]} | #{the_board[7]} | #{the_board[8]} "
 end
 
+#user's raw input converted
 def input_to_index(user_index_choice)
   user_index_choice.to_i - 1
 end
