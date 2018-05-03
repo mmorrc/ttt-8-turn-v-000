@@ -49,7 +49,7 @@ def turn(board)
   user_response = gets.strip
   user_response = input_to_index(user_response)
   if valid_move?(board, user_response) == true
-    move board(user_response)
+    move (board, user_response)
     display_board(board)
 else
   turn(board)
