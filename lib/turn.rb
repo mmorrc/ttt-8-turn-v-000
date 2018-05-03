@@ -7,6 +7,10 @@ def display_board(the_board)
   puts " #{the_board[6]} | #{the_board[7]} | #{the_board[8]} "
 end
 
+def input_to_index(user_index_choice)
+  user_index_choice.to_i - 1
+end
+
 #Should accept a board and an index from the user and return true if the index is within the correct range of 0-8 and is currently unoccupied by an X or O token.
 def valid_move?(board, index)
 
